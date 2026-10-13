@@ -1,0 +1,211 @@
+  <!-- Interactive Searchable Price List (Cennik) with Empty State -->
+  <section class="pricing-section" id="pricing">
+    <div class="container">
+      <div class="section-header-center">
+        <span class="section-label">Przejrzysty Cennik</span>
+        <h2 class="section-title">Cennik Wybranych Usług</h2>
+        <p class="section-subtitle">
+          Wpisz nazwę zabiegu, aby natychmiast sprawdzić cenę. Pełny wykaz wraz z aktualnymi terminami dostępny jest w
+          naszym profilu na Booksy.
+        </p>
+      </div>
+
+      <!-- Live Search Box -->
+      <div class="pricing-search-box">
+        <svg class="pricing-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8" />
+          <line x1="21" y1="21" x2="16.65" y2="16.65" />
+        </svg>
+        <input type="text" id="price-search-input" class="pricing-search-input"
+          placeholder="Wpisz nazwę zabiegu, np. dermapen, oczyszczanie, pedicure, mezoterapia, hifu..."
+          aria-label="Wyszukaj zabieg w cenniku">
+      </div>
+
+      <!-- Empty State Container when search has no results -->
+      <div id="pricing-empty-state" class="pricing-empty-state" style="display: none;">
+        <div class="empty-state-icon">🔍</div>
+        <h3>Nie znaleziono zabiegu odpowiadającego Twojemu zapytaniu</h3>
+        <p>W naszej klinice wykonujemy ponad 350 różnych procedur kosmetologicznych i medycznych. Sprawdź pełny katalog
+          bezpośrednio w Booksy lub skontaktuj się z naszą recepcją!</p>
+        <div class="empty-state-actions">
+          <button type="button" id="reset-price-search" class="btn btn-outline-gold btn-sm">Wyczyść
+            wyszukiwanie</button>
+          <a href="https://booksy.com/pl-pl/98996_klinika-piekna-kalina_salon-kosmetyczny_3_warszawa" target="_blank"
+            rel="noopener" class="btn btn-booksy btn-sm">Otwórz pełny cennik na Booksy &rarr;</a>
+        </div>
+      </div>
+
+      <div class="pricing-categories-grid" id="pricing-grid">
+
+        <!-- Category 1: Twarz & Peelingi -->
+        <div class="pricing-category-card">
+          <div class="pricing-cat-header">
+            <img src="assets/images/icon-na-twarz.png" alt="Zabiegi na twarz" class="pricing-cat-icon">
+            <h3 class="pricing-cat-title">Zabiegi na Twarz & Peelingi</h3>
+          </div>
+          <div class="pricing-table">
+            <div class="pricing-row">
+              <div class="pricing-name">5-etapowe Oczyszczanie Wodorowe<small>Hydro-detoks, eksfoliacja kwasowa,
+                  ultradźwięki</small></div>
+              <div class="pricing-val">480 PLN</div>
+            </div>
+            <div class="pricing-row">
+              <div class="pricing-name">DermaQuest Peptydowy Biomimetyczny<small>Innowacyjny peeling o właściwościach
+                  botoksu bez igieł</small></div>
+              <div class="pricing-val">420 PLN</div>
+            </div>
+            <div class="pricing-row">
+              <div class="pricing-name">Diego Dalla Palma ICON TIME (Złoto/Platyna)<small>Bio-rewitalizacja komórek
+                  skóry dojrzałej</small></div>
+              <div class="pricing-val">420 PLN</div>
+            </div>
+            <div class="pricing-row">
+              <div class="pricing-name">DermaQuest Peeling Dyniowy<small>Dla skór problematycznych, trądzikowych i z
+                  przebarwieniami</small></div>
+              <div class="pricing-val">360 PLN</div>
+            </div>
+            <div class="pricing-row">
+              <div class="pricing-name">Cell Detoxium – Odtruwanie Komórkowe<small>Głęboka eliminacja toksyn z kwasem
+                  alfa-liponowym</small></div>
+              <div class="pricing-val">280 PLN</div>
+            </div>
+            <div class="pricing-row">
+              <div class="pricing-name">Diego Dalla Palma SENSITIVE<small>Kojenie i odbudowa naczynek
+                  krwionośnych</small></div>
+              <div class="pricing-val">280 PLN</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Hi-Tech & Lasery -->
+        <div class="pricing-category-card">
+          <div class="pricing-cat-header">
+            <img src="assets/images/icon-hi-tech.png" alt="Kosmetologia Hi-Tech" class="pricing-cat-icon">
+            <h3 class="pricing-cat-title">Kosmetologia Hi-Tech & Lasery</h3>
+          </div>
+          <div class="pricing-table">
+            <div class="pricing-row">
+              <div class="pricing-name">Radiofrekwencja Mikroigłowa + Laser Erbowy<small>Flagowy zabieg głębokiej
+                  przebudowy i liftingu</small></div>
+              <div class="pricing-val">od 850 PLN</div>
+            </div>
+            <div class="pricing-row">
+              <div class="pricing-name">Dermapen 4.0 – Twarz<small>Frakcyjne mikronakłuwanie z koktajlem
+                  odżywczym</small></div>
+              <div class="pricing-val">750 PLN</div>
+            </div>
+            <div class="pricing-row">
+              <div class="pricing-name">Dermapen 4.0 EGZOSOMY (Twarz + Szyja)<small>Biotechnologiczna regeneracja
+                  najnowszej generacji</small></div>
+              <div class="pricing-val">1500 PLN</div>
+            </div>
+            <div class="pricing-row">
+              <div class="pricing-name">Intraceuticals Rejuvenate (Tlen Hiperbaryczny)<small>Infuzja czystego tlenu z
+                  kwasem hialuronowym</small></div>
+              <div class="pricing-val">590 PLN</div>
+            </div>
+            <div class="pricing-row">
+              <div class="pricing-name">Lifting HIFU – Owal Twarzy i Podbródek<small>Bezinwazyjny lifting ultradźwiękowy
+                  SMAS</small></div>
+              <div class="pricing-val">od 590 PLN</div>
+            </div>
+            <div class="pricing-row">
+              <div class="pricing-name">Depilacja Laserowa Light Sheer Duet<small>Trwała redukcja owłosienia (partia
+                  od)</small></div>
+              <div class="pricing-val">od 150 PLN</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Medycyna Estetyczna -->
+        <div class="pricing-category-card">
+          <div class="pricing-cat-header">
+            <img src="assets/images/icon-medycyna.png" alt="Medycyna Estetyczna" class="pricing-cat-icon">
+            <h3 class="pricing-cat-title">Medycyna Estetyczna</h3>
+          </div>
+          <div class="pricing-table">
+            <div class="pricing-row">
+              <div class="pricing-name">Stymulator Tkankowy – Twarz<small>Profhilo / Nucleofill / Karisma / Ejal
+                  40</small></div>
+              <div class="pricing-val">1000 PLN</div>
+            </div>
+            <div class="pricing-row">
+              <div class="pricing-name">Stymulatory Tkankowe – Twarz, Szyja, Oczy<small>Kompleksowy pakiet
+                  biorewitalizacji</small></div>
+              <div class="pricing-val">2200 PLN</div>
+            </div>
+            <div class="pricing-row">
+              <div class="pricing-name">BEAUTIF-EYE Fillmed & NCTF 135 HA<small>Dedykowany zabieg odmłodzenia delikatnej
+                  okolicy oczu</small></div>
+              <div class="pricing-val">650 PLN</div>
+            </div>
+            <div class="pricing-row">
+              <div class="pricing-name">Biorewitalizacja PRX-T33 Twarz<small>Nieinwazyjny resurfacing TCA bez
+                  łuszczenia</small></div>
+              <div class="pricing-val">390 PLN</div>
+            </div>
+            <div class="pricing-row">
+              <div class="pricing-name">Mezoterapia Igłowa Twarzy<small>Głębokie nawilżenie i regeneracja skóry
+                  właściwej</small></div>
+              <div class="pricing-val">od 450 PLN</div>
+            </div>
+            <div class="pricing-row">
+              <div class="pricing-name">Kwas Hialuronowy – Modelowanie i Wolumetria<small>Usta, bruzdy nosowo-wargowe,
+                  modelowanie żuchwy</small></div>
+              <div class="pricing-val">od 900 PLN</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 4: Ciało, Dłonie & Stopy -->
+        <div class="pricing-category-card">
+          <div class="pricing-cat-header">
+            <img src="assets/images/icon-dlonie.png" alt="Pielęgnacja dłoni i stóp" class="pricing-cat-icon">
+            <h3 class="pricing-cat-title">Dłonie, Stopy & Modelowanie Ciała</h3>
+          </div>
+          <div class="pricing-table">
+            <div class="pricing-row">
+              <div class="pricing-name">Pedicure Klasyczny / SPA z Peelingiem<small>Kompleksowa pielęgnacja podeszwy i
+                  paznokci</small></div>
+              <div class="pricing-val">170 - 230 PLN</div>
+            </div>
+            <div class="pricing-row">
+              <div class="pricing-name">Manicure Hybrydowy<small>Perfekcyjne opracowanie skórek, baza witaminowa,
+                  kolor</small></div>
+              <div class="pricing-val">140 - 180 PLN</div>
+            </div>
+            <div class="pricing-row">
+              <div class="pricing-name">LipoRadioLogie VINCI – Ciało<small>Fala radiowa, podczerwień, masaż
+                  próżniowy</small></div>
+              <div class="pricing-val">od 190 PLN</div>
+            </div>
+            <div class="pricing-row">
+              <div class="pricing-name">Bandaże AROSHA (Aqua Drain / Slim Cel)<small>Intensywny drenaż limfatyczny i
+                  redukcja cellulitu</small></div>
+              <div class="pricing-val">330 PLN</div>
+            </div>
+            <div class="pricing-row">
+              <div class="pricing-name">Masaż Relaksacyjny / Gorącymi Kamieniami<small>Głęboki relaks mięśni i redukcja
+                  napięć stresowych</small></div>
+              <div class="pricing-val">od 180 PLN</div>
+            </div>
+            <div class="pricing-row">
+              <div class="pricing-name">Makijaż Permanentny Brwi (Ombre / Pudrowy)<small>W cenie profesjonalna korekta
+                  po 4-6 tygodniach</small></div>
+              <div class="pricing-val">od 1000 PLN</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div
+        style="margin-top: 36px; padding: 22px; background: rgba(0, 121, 55, 0.05); border-radius: 16px; border: 1px dashed var(--c-emerald); text-align: center;">
+        <p style="font-size: 0.9375rem; color: var(--t-body);">
+          💳 <strong>Wygodne płatności & MediRaty:</strong> Akceptujemy wszystkie karty płatnicze oraz oferujemy
+          <strong>kredytowanie zabiegów (MediRaty)</strong> z minimum formalności. Zawsze bezpłatna konsultacja
+          kosmetologiczna przed zabiegiem!
+        </p>
+      </div>
+    </div>
+  </section>

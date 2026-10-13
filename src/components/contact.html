@@ -1,0 +1,174 @@
+  <!-- Kontakt & Dojazd -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header-center">
+        <span class="section-label">Lokalizacja & Kontakt</span>
+        <h2 class="section-title">Zapraszamy do Kliniki Kalina</h2>
+        <p class="section-subtitle">
+          Skontaktuj się z nami telefonicznie, przez formularz lub odwiedź nas w sercu warszawskiego Wawra.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Info Card -->
+        <div class="contact-info-card">
+
+          <div class="contact-detail-row">
+            <div class="contact-detail-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <div class="contact-detail-text">
+              <h4>Adres Kliniki</h4>
+              <p>
+                <strong>Klinika Piękna KALINA</strong><br>
+                ul. Widoczna 51<br>
+                04-647 Warszawa (Wawer / Anin)
+              </p>
+              <a href="https://maps.app.goo.gl/hhfdtp5nYHeT2wE89" target="_blank" rel="noopener"
+                style="color: var(--c-emerald); display: inline-flex; align-items: center; gap: 4px; margin-top: 6px; font-weight: 700;">
+                Otwórz w Google Maps &rarr;
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-detail-row">
+            <div class="contact-detail-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+            </div>
+            <div class="contact-detail-text">
+              <h4>Telefon do Rejestracji</h4>
+              <p>
+                <a href="tel:+48500516118" style="font-size: 1.3rem; font-weight: 700; color: var(--c-emerald);">+48 500
+                  516 118</a><br>
+                <small>Chętnie odpowiemy na pytania i pomożemy dobrać dogodny termin.</small>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-detail-row">
+            <div class="contact-detail-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <div class="contact-detail-text">
+              <h4>Adres E-mail</h4>
+              <p>
+                <a href="mailto:kontakt@klinikakalina.pl">kontakt@klinikakalina.pl</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-hours-box">
+            <h5>Godziny Otwarcia</h5>
+            <div class="hours-row">
+              <span>Poniedziałek – Piątek</span>
+              <strong>09:00 – 20:00</strong>
+            </div>
+            <div class="hours-row">
+              <span>Sobota</span>
+              <strong>Zamknięte</strong>
+            </div>
+            <div class="hours-row">
+              <span>Niedziela</span>
+              <strong>09:00 – 16:00</strong>
+            </div>
+          </div>
+
+          <div
+            style="font-size: 0.875rem; color: var(--t-muted); border-left: 3px solid var(--c-emerald); padding-left: 14px;">
+            🚗 <strong>Dojazd i Parking:</strong> Klinika usytuowana jest w bliskiej odległości od stacji PKP/SKM
+            Warszawa Anin. Przed budynkiem do dyspozycji klientów znajduje się bezpłatny parking.
+          </div>
+
+        </div>
+
+        <!-- Form Card -->
+        <div class="contact-form-card">
+          <h3 class="form-title">Napisz Do Nas</h3>
+          <p class="form-subtitle">Masz pytania dotyczące zabiegów? Wypełnij formularz, a oddzwonimy.</p>
+
+          <form id="contact-form" action="contact.php" method="POST" novalidate>
+            <!-- Antispam Honeypot (ukryte przed ludźmi) -->
+            <input type="text" name="website" id="cf-website" style="display:none !important;" tabindex="-1"
+              autocomplete="off">
+
+            <div class="form-group">
+              <label class="form-label" for="cf-name">Imię i Nazwisko *</label>
+              <input type="text" id="cf-name" name="name" class="form-control" placeholder="np. Anna Kowalska" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="cf-phone">Numer Telefonu *</label>
+              <input type="tel" id="cf-phone" name="phone" class="form-control" placeholder="np. 500 000 000" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="cf-email">Adres E-mail</label>
+              <input type="email" id="cf-email" name="email" class="form-control" placeholder="np. anna@example.pl">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="cf-service">Interesujący Cię Zabieg / Kategoria</label>
+              <select id="cf-service" name="service" class="form-control" style="cursor: pointer;">
+                <option value="Bezpłatna Konsultacja Kosmetologiczna">Bezpłatna Konsultacja Kosmetologiczna</option>
+                <option value="Zabiegi na Twarz (Selvert, Diego Dalla Palma, Peelingi)">Zabiegi na Twarz (Selvert, Diego
+                  Dalla Palma, Peelingi)</option>
+                <option value="Kosmetologia Hi-Tech (Radiofrekwencja, Dermapen, HIFU)">Kosmetologia Hi-Tech
+                  (Radiofrekwencja, Dermapen, HIFU)</option>
+                <option value="Medycyna Estetyczna & Stymulatory Tkankowe">Medycyna Estetyczna & Stymulatory Tkankowe
+                </option>
+                <option value="Modelowanie Ciała, LipoRadioLogie & EMSCULPT">Modelowanie Ciała, LipoRadioLogie &
+                  EMSCULPT</option>
+                <option value="Pielęgnacja Dłoni i Stóp (Pedicure / Manicure)">Pielęgnacja Dłoni i Stóp (Pedicure /
+                  Manicure)</option>
+                <option value="Makijaż Permanentny">Makijaż Permanentny</option>
+                <option value="Inne zapytanie">Inne zapytanie</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="cf-message">Wiadomość / Pytania</label>
+              <textarea id="cf-message" name="message" class="form-control"
+                placeholder="Opisz swoje oczekiwania lub preferowane dni/godziny kontaktu..."></textarea>
+            </div>
+
+            <div class="form-group form-check-group">
+              <label class="form-check-label" for="cf-rodo">
+                <input type="checkbox" id="cf-rodo" name="rodo" required>
+                <span>Wyrażam zgodę na przetwarzanie danych osobowych w celu kontaktu zgodnie z <a href="#privacy-modal"
+                    class="privacy-link" id="open-form-privacy">Polityką Prywatności</a>. *</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-emerald btn-lg" id="cf-submit-btn" style="width: 100%;">
+              <span id="cf-submit-text">Wyślij Wiadomość</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+            </button>
+
+            <div id="form-feedback" class="form-feedback"></div>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Verified Google Maps Embed Card -->
+      <div class="map-card">
+        <iframe title="Lokalizacja Klinika Kalina Warszawa"
+          src="https://maps.google.com/maps?q=Widoczna%2051,%2004-647%20Warszawa&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>

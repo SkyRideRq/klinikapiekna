@@ -1,0 +1,113 @@
+  <!-- Interactive Beauty Advisor / Quiz with Treatment Photos -->
+  <section class="advisor-section" id="advisor">
+    <div class="container">
+      <div class="section-header-center">
+        <span class="section-label light-badge">Inteligentny Asystent Urody</span>
+        <h2 class="section-title white-text">Dobierz Idealny Zabieg dla Siebie</h2>
+        <p class="section-subtitle white-muted">
+          Nie musisz wiedzieć, która procedura będzie dla Ciebie najlepsza. Wskaż swój główny cel pielęgnacyjny, a my
+          natychmiast dopasujemy rekomendowaną terapię!
+        </p>
+      </div>
+
+      <div class="advisor-box">
+        <h3 class="quiz-step-title">Jaki jest Twój priorytet? Wybierz cel:</h3>
+
+        <div class="quiz-goals-grid">
+          <button type="button" class="quiz-goal-btn active" data-goal="odmlodzenie">
+            <span class="goal-svg-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path
+                  d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </span>
+            <span>Odmłodzenie & Zmarszczki</span>
+          </button>
+
+          <button type="button" class="quiz-goal-btn" data-goal="nawilzenie">
+            <span class="goal-svg-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+              </svg>
+            </span>
+            <span>Głębokie Nawilżenie & Blask</span>
+          </button>
+
+          <button type="button" class="quiz-goal-btn" data-goal="oczyszczanie">
+            <span class="goal-svg-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+              </svg>
+            </span>
+            <span>Oczyszczanie & Detoks Porów</span>
+          </button>
+
+          <button type="button" class="quiz-goal-btn" data-goal="naczynka">
+            <span class="goal-svg-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+            </span>
+            <span>Cera Naczynkowa & Rumień</span>
+          </button>
+
+          <button type="button" class="quiz-goal-btn" data-goal="sylwetka">
+            <span class="goal-svg-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="7" r="4" />
+                <path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2" />
+                <path d="M8 13c1.5 2 6.5 2 8 0" />
+              </svg>
+            </span>
+            <span>Modelowanie & Cellulit</span>
+          </button>
+
+          <button type="button" class="quiz-goal-btn" data-goal="dlonie">
+            <span class="goal-svg-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v3" />
+                <path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v7" />
+                <path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8" />
+                <path
+                  d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15" />
+              </svg>
+            </span>
+            <span>Zadbane Dłonie & Stopy</span>
+          </button>
+        </div>
+
+        <!-- Rich Result Card with Image -->
+        <div class="quiz-result-card">
+          <div class="quiz-result-img-box">
+            <img id="quiz-res-img" src="assets/images/services_face8.jpg" alt="Rekomendowany zabieg"
+              class="quiz-result-img">
+          </div>
+          <div class="quiz-result-info">
+            <div class="quiz-result-meta">
+              <span class="quiz-badge" id="quiz-res-badge">Flagowy Zabieg Anti-Ageing</span>
+              <span class="quiz-price" id="quiz-res-price">od 850 PLN</span>
+            </div>
+            <h3 id="quiz-res-title">Radiofrekwencja Mikroigłowa + Laser Erbowo-Szklany</h3>
+            <p class="quiz-result-desc" id="quiz-res-desc">
+              Nasz autorski, najsilniejszy duet odmładzający. Łączy głęboką przebudowę włókien kolagenowych za pomocą RF
+              z frakcyjnym resurfacingiem laserowym. Daje spektakularny efekt wygładzenia zmarszczek, ujędrnienia owalu
+              i odmłodzenia skóry o lata.
+            </p>
+            <div style="margin-top: 20px;">
+              <a href="https://booksy.com/pl-pl/98996_klinika-piekna-kalina_salon-kosmetyczny_3_warszawa"
+                target="_blank" rel="noopener" class="btn btn-gold btn-lg" id="quiz-res-booksy">
+                <span>Zarezerwuj ten zabieg w Booksy</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14" />
+                  <path d="M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

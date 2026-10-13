@@ -1,0 +1,13 @@
+# ==============================================================================
+# KLINIKA PIĘKNA KALINA - BEZPIECZNA KONFIGURACJA (BEZ BŁĘDÓW 403)
+# ==============================================================================
+
+# 1. Plik startowy
+DirectoryIndex index.html
+
+# 2. Wymuszenie bezpiecznego połączenia HTTPS
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
